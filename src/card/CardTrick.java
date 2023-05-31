@@ -27,6 +27,13 @@ public class CardTrick
             c.setSuit(Card.SUITS[generateRandomNumber(0, 3)]);
             magicHand[i] = c;
         }
+        
+        Card luckyCard = new Card();
+        luckyCard.setValue(10); 
+        luckyCard.setSuit(Card.SUITS[0]); 
+
+        magicHand[magicHand.length - 1] = luckyCard; 
+
 
         Scanner kb = new Scanner(System.in);
         System.out.print("Enter the value of your card: ");
