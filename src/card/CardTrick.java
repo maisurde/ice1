@@ -32,7 +32,8 @@ public class CardTrick
         
         Card luckyCard = new Card();
         luckyCard.setValue(12); 
-        luckyCard.setSuit(Card.SUITS[0]); 
+        luckyCard.setSuit(Card.SUITS[0]);
+        
 
         magicHand[magicHand.length - 1] = luckyCard; 
 
@@ -59,7 +60,7 @@ public class CardTrick
 
         if (found) 
         {
-            System.out.println("You are the lucky one because your card is in the magic hand!");
+            System.out.println("You are the lucky one because your card is in the magic hand and lucky as well!");
         } 
         
         else 
@@ -67,6 +68,7 @@ public class CardTrick
             System.out.println("Sorry your card is not in the magic hand!");
         }
     }
+    
 
     private static int generateRandomNumber() 
     {
