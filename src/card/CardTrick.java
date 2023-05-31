@@ -9,6 +9,8 @@ package card;
  * and then asks the user to pick a card and searches the array of cards
  * for the match to the user's card. To be used as starting code in ICE 1
  * @author srinivsi
+ * Denishkumar Hemantbhai Maisuriya 
+ * Student Number - 991699029
  */
 import java.util.Random;
 import java.util.Scanner;
@@ -29,16 +31,16 @@ public class CardTrick
         }
         
         Card luckyCard = new Card();
-        luckyCard.setValue(10); 
+        luckyCard.setValue(12); 
         luckyCard.setSuit(Card.SUITS[0]); 
 
         magicHand[magicHand.length - 1] = luckyCard; 
 
 
         Scanner kb = new Scanner(System.in);
-        System.out.print("Enter the value of your card: ");
+        System.out.print("Enter the value of your desire card: ");
         int value = kb.nextInt();
-        System.out.print("Enter the suit of your card (0-3): ");
+        System.out.print("Enter the suit of your desire card (0-3): ");
         int suitIndex = kb.nextInt();
 
         Card userCard = new Card();
@@ -57,12 +59,12 @@ public class CardTrick
 
         if (found) 
         {
-            System.out.println("Your card is in the magic hand!");
+            System.out.println("You are the lucky one because your card is in the magic hand!");
         } 
         
         else 
         {
-            System.out.println("Your card is not in the magic hand.");
+            System.out.println("Sorry your card is not in the magic hand!");
         }
     }
 
